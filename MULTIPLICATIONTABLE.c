@@ -1,0 +1,24 @@
+#include <stdio.h>
+void printTable(int *mulTable,int num,int n){
+    printf("the multiplication table of %d is:\n",num);
+    for(int i=0;i<n;i++){
+        mulTable[i]=num*(i+1);
+    }
+    for(int i = 0;i<n;i++){
+        printf("%d X %d = %d  ",num,i+1,mulTable[i]);
+
+    }
+    printf("*********MULTIPLICATION======**\n\n");
+}
+int main(){
+int mulTable[8][10];
+printTable(mulTable[0],2,10);
+printTable(mulTable[1],3,10);
+printTable(mulTable[2],4,10);
+printTable(mulTable[3],5,10);
+printTable(mulTable[4],6,10);
+printTable(mulTable[5],7,10);
+printTable(mulTable[6],8,10);
+printTable(mulTable[7],9,10);
+return 0;
+}
